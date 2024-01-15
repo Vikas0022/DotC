@@ -1,0 +1,10 @@
+tinyxml2::XMLDocument doc;   //create a document object
+tinyxml2::XMLElement *root = doc.NewElement("Root"); //create a root tag for whole data
+tinyxml2::XMLElement *employee = doc.NewElement("Employee"); // create employee tag to insert each employee details into root
+id->SetText(currentEmp->empId.c_str());  //adding text to id tag
+employee->InsertFirstChild(id);  //inserting id into employee tag i.e employee contains id and name and that employee is added to root
+doc.LoadFile(rFileName.c_str())  //loading the desired file
+doc.FirstChildElement("Root");  //get the root tag components
+for (tinyxml2::XMLElement *empElement = root->FirstChildElement("Employee"); empElement; empElement = empElement->NextSiblingElement("Employee"))  //iterate over employee tag untill null
+tinyxml2::XMLElement *idElement = empElement->FirstChildElement("ID");  //get the employee tag's first id tag
+idElement->GetText();  //get the data stored in that id
