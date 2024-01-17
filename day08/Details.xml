@@ -1,0 +1,45 @@
+<Root>
+    <Employee>
+        <ID>1</ID>
+        <Name>vikas</Name>
+        <ProjectsList>
+            <Project>
+                <Name>code pen</Name>
+                <Description>this provides a code editor</Description>
+                <Status>completed</Status>
+            </Project>
+            <Project>
+                <Name>genetic disease</Name>
+                <Description>this is a basic ml project</Description>
+                <Status>pending</Status>
+            </Project>
+        </ProjectsList>
+    </Employee>
+    <Employee>
+        <ID>2</ID>
+        <Name>bhanu</Name>
+        <ProjectsList>
+            <Project>
+                <Name>personality prediction</Name>
+                <Description>this is basic ml project</Description>
+                <Status>completed</Status>
+            </Project>
+            <Project>
+                <Name>social media platform</Name>
+                <Description>this is a mern stack application</Description>
+                <Status>pending</Status>
+            </Project>
+        </ProjectsList>
+    </Employee>
+    <Employee>
+        <ID>3</ID>
+        <Name>shoaed</Name>
+        <ProjectsList>
+            <Project>
+                <Name>stock price prediction</Name>
+                <Description>this is a mern stack application</Description>
+                <Status>completed</Status>
+            </Project>
+        </ProjectsList>
+    </Employee>
+</Root>
